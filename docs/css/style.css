@@ -1,0 +1,65 @@
+body{
+  margin: 0%;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 7%;
+  top: 0;
+  z-index: 100;
+  background-color: bisque;
+}
+
+a{
+  text-decoration: none;
+}
+
+.inner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menu-logo{
+  display: inline-block;
+  height: 100%;
+  left: 5%;
+}
+.menu-logo img{
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-button{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.menu-button nav{
+  height: 100%;
+}
+.menu-button ul{
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+}
+.menu-button li{
+  display: inline-block;
+  width: 10vw;
+  height: 100%;
+}
+.menu-button a{
+  display: flex;
+  color: white;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  justify-content: center; 
+  align-items: center; 
+}
