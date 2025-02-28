@@ -6,7 +6,7 @@ header {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   top: 0;
   z-index: 100;
   background-color: bisque;
@@ -34,27 +34,27 @@ a{
   object-fit: contain;
 }
 
-.menu-button{
+.menu-btn{
   display: flex;
   justify-content: flex-end;
   width: 100%;
   height: 100%;
 }
-.menu-button nav{
+.menu-btn nav{
   height: 100%;
 }
-.menu-button ul{
+.menu-btn ul{
   display: flex;
   margin: 0%;
   padding: 0%;
   height: 100%;
 }
-.menu-button li{
+.menu-btn li{
   display: inline-block;
   width: 10vw;
   height: 100%;
 }
-.menu-button a{
+.menu-btn a{
   display: flex;
   color: white;
   background-color: red;
@@ -87,11 +87,38 @@ section{
   text-align: center;
 }
 
+.thumbnail{
+  display: flex;
+  justify-content: center;
+}
+.thumbnail button{
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  padding: 0%;
+  background-color: red;
+}
+.thumbnail img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pic-chara{
+  display: flex;
+  justify-content: center;
+}
+.pic-chara img{
+  height: 80vh;
+  object-fit: contain;
+}
+
 
 footer{
   display: block;
   height: 8vh;
   text-align: center;
+  padding-bottom: 5vh;
 }
 
 .logo-footer{
