@@ -20,14 +20,12 @@ a{
   width: 100%;
   height: 100%;
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
+  justify-content: right;
 }
 
 .menu-logo{
   display: inline-block;
   height: 100%;
-  left: 5%;
 }
 .menu-logo img{
   height: 100%;
@@ -36,9 +34,9 @@ a{
 
 .menu-btn{
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: right;
   height: 100%;
+  margin-right: 5vw;
 }
 .menu-btn nav{
   height: 100%;
@@ -51,10 +49,11 @@ a{
 }
 .menu-btn li{
   display: inline-block;
-  width: 10vw;
+  width: 15vw;
   height: 100%;
 }
 .menu-btn a{
+  font-size: 1.5vw;
   display: flex;
   color: white;
   background-color: red;
