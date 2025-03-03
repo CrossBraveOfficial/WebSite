@@ -71,6 +71,12 @@ section{
   display: block;
 }
 
+h1{
+  padding-left: 5vw;
+  font-size: 5vw;
+  font-family: 游ゴシック,"YuGothic",HiraKakuProN-W6;
+}
+
 #top{
   text-align: center;
 }
