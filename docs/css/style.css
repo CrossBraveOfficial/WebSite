@@ -2,76 +2,73 @@ body{
   margin: 0%;
 }
 
-header {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 8vh;
-  top: 0;
-  z-index: 100;
-  background-color: bisque;
-}
-
 a{
   text-decoration: none;
 }
 
-.inner{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: right;
+
+header {
+  margin: 0;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 
-.menu-logo{
-  display: inline-block;
+.menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 100%;
-}
-.menu-logo img{
-  height: 100%;
-  object-fit: contain;
 }
 
-.menu-btn{
-  display: flex;
-  justify-content: right;
-  height: 100%;
-  margin-right: 5vw;
-}
-.menu-btn nav{
-  height: 100%;
-}
-.menu-btn ul{
-  display: flex;
-  margin: 0%;
-  padding: 0%;
-  height: 100%;
-}
-.menu-btn li{
-  display: inline-block;
-  width: 15vw;
-  height: 100%;
-}
-.menu-btn a{
-  font-size: 1.5vw;
-  display: flex;
+.menu {
+  background: red;
   color: white;
-  background-color: red;
-  width: 100%;
-  height: 100%;
-  justify-content: center; 
-  align-items: center; 
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  left: -300px;
+  top: 0;
+  transition: left 0.3s;
+}
+.menu ul {
+  margin-top: 8vh;
+  list-style: none;
+  padding: 0;
+}
+.menu ul li {
+  padding: 15px;
+}
+.menu ul li a {
+  font-size: 3vh;
+  color: white;
+  text-decoration: none;
 }
 
-
-main{
-  padding-top: 8vh;
+.menu-toggle {
+  font-size: 5vh;
+  background: none;
+  border: none;
+  color: black;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  z-index: 100;
 }
+
+@media (min-width: 768px) {
+  .menu {
+      left: 0;
+  }
+
+  .menu-toggle {
+      display: none;
+  }
+}
+
 
 section{
   display: block;
-  padding-top: 8vh;
-  margin-top: -8vh;
 }
 
 #top{
