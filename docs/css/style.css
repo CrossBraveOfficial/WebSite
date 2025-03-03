@@ -1,5 +1,5 @@
 body{
-  margin: 0%;
+  margin: 0;
 }
 
 a{
@@ -26,7 +26,7 @@ header {
 }
 
 .menu {
-  background: red;
+  background: #e60012;
   color: white;
   width: 300px;
   height: 100vh;
@@ -64,11 +64,20 @@ header {
 
 
 main{
-  margin-left: 0;
+  padding-left: 0;
+  font-family: "Noto Sans JP", serif;
 }
 
 section{
   display: block;
+}
+
+.sec-img{
+  margin-left: 20px;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  width: 95%;
+  object-fit: contain;
 }
 
 h1{
@@ -117,6 +126,9 @@ h1{
 
 
 footer{
+  background-color: black;
+  color: white;
+  padding-left: 0;
   display: block;
   height: 8vh;
   text-align: center;
@@ -142,6 +154,15 @@ footer{
   }
 
   main{
-    margin-left: 299px;
+    padding-left: 299px;
+  }
+
+  .sec-img{
+    margin-top: 20vh;
+    margin-bottom: 6vh;
+  }
+
+  footer{
+    padding-left: 299px;
   }
 }
