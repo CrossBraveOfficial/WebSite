@@ -6,6 +6,11 @@ a{
   text-decoration: none;
 }
 
+iframe{
+  width: 100vw;
+  object-fit: contain;
+}
+
 
 header {
   margin: 0;
@@ -41,6 +46,14 @@ header {
   font-size: 3vh;
   color: white;
   text-decoration: none;
+}
+
+.sns-btn{
+  display: flex;
+}
+.sns-btn img{
+  object-fit: contain;
+  width: 10%;
 }
 
 .menu-toggle {
