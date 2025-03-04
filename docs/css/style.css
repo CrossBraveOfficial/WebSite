@@ -99,20 +99,29 @@ section{
 }
 
 .chara-container{
-  display: flex;
+  display: block;
   margin-left: 20px;
   margin-right: 20px;
 }
 .ex-container{
-  width: 60%;
+  width: 80%;
 }
 .show-container{
-  width: 40%;
+  width: 60%;
+  margin: auto;
+}
+
+.hide{
+  margin-bottom: 30px;
+}
+
+.ex-container .thumbnail{
+  display: none;
 }
 
 .thumbnail{
   margin-top: 10%;
-  padding-right: 20%;
+  padding-right: 0;
   display: flex;
   justify-content: left;
 }
@@ -122,7 +131,7 @@ section{
   display: inline-block;
   aspect-ratio: 1;
   width: 20%;
-  margin-right: 5%;
+  margin-right: 6%;
   padding: 0;
   border: none;
   background: transparent;
@@ -189,6 +198,33 @@ footer{
   .sec-img{
     margin-top: 20vh;
     margin-bottom: 6vh;
+  }
+
+  .ex-container .thumbnail{
+    display: flex;
+  }
+
+  .ex-container{
+    width: 60%;
+  }
+  .show-container{
+    width: 40%;
+  }
+
+  .chara-container{
+    display: flex;
+  }
+
+  .thumbnail{
+    padding-right: 20%;
+  }
+
+  .thumbnail button{
+    margin-right: 5%;
+  }
+
+  .hide{
+    display: none;
   }
 
   footer{
