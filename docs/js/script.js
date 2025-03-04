@@ -1,7 +1,31 @@
 function PicAkane(){
-  document.getElementById("show-img").src="images/chara/akane.png";}
+  const ex_img = document.getElementsByClassName("ex-img")[0];
+  const show_img = document.getElementById("show-img");
+
+  show_img.style.opacity = 0;
+  ex_img.style.opacity =0;
+  
+  setTimeout(() => {
+    ex_img.src="images/ex_akane.png";
+    show_img.src="images/chara/akane.png";
+    ex_img.style.opacity = 1;
+    show_img.style.opacity = 1;
+  }, 300);
+}
+
 function PicRei(){
-  document.getElementById("show-img").src="images/chara/rei.png";
+  const ex_img = document.getElementsByClassName("ex-img")[0];
+  const show_img = document.getElementById("show-img");
+
+  show_img.style.opacity = 0;
+  ex_img.style.opacity =0;
+  
+  setTimeout(() => {
+    ex_img.src="images/ex_rei.png";
+    show_img.src="images/chara/rei.png";
+    ex_img.style.opacity = 1;
+    show_img.style.opacity = 1;
+  }, 300);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

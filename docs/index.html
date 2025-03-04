@@ -55,12 +55,21 @@
 
       <section id="character">
         <img class="sec-img" src="images/Character.png" alt="Character/登場キャラクター">
-        <div class="thumbnail">
-          <button class="btn-akane" onclick="PicAkane()" type="button"><img src="images/icon/akane.png" alt="akane"></button>
-          <button class="btn-rei" onclick="PicRei()" type="button"><img src="images/icon/rei.png" alt="rei"></button>
-        </div>
-        <div class="pic-chara">
-          <img id="show-img" src="images/chara/akane.png" alt="chara">
+        <div class="chara-container">
+          <div class="ex-container">
+            <div class="ex-chara">
+              <img class="ex-img" src="images/ex_akane.png" alt="アカネ説明">
+            </div>
+            <div class="thumbnail">
+              <button class="btn-akane" onclick="PicAkane()" type="button"><img src="images/icon/akane.png" alt="akane"></button>
+              <button class="btn-rei" onclick="PicRei()" type="button"><img src="images/icon/rei.png" alt="rei"></button>
+            </div>
+          </div>
+          <div class="show-container">
+            <div class="pic-chara">
+              <img id="show-img" src="images/chara/akane.png" alt="chara">
+            </div>
+          </div>
         </div>
       </section>
     </main>
