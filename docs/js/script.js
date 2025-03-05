@@ -38,11 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+var windowWidth = $(window).width();
+var windowSm = 768;
+
 function MenuClose(){
   const menu = document.querySelector(".menu");
-
-  if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  
+  if (windowWidth <= windowSm) {
     const isOpen = menu.style.left === "0px";
     menu.style.left = isOpen ? "-300px" : "0px";
+  } else {
+    
   }
 }
