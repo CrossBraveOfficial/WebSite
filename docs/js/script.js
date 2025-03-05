@@ -40,9 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function MenuClose(){
   const menu = document.querySelector(".menu");
-
-  if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  if (window.matchMedia('(max-width: 767px)').matches) {
     const isOpen = menu.style.left === "0px";
     menu.style.left = isOpen ? "-300px" : "0px";
+  } else if (window.matchMedia('(min-width:768px)').matches) {
+    //PC処理
   }
 }
