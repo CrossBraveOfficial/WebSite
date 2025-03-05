@@ -2,25 +2,88 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>クロスブレイブ公式サイト</title>
     <meta name="description" content="HEW2025映像作品「クロスブレイブ」の公式サイトです。">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      
+      <div class="menu-container">
+        <button class="menu-toggle" aria-label="メニューを開閉">☰</button>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#teaser">TEASER</a></li>
+            <li><a href="#introduction">INTRODUCTION</a></li>
+            <li><a href="#character">CHARACTER</a></li>
+            <li><a href="https://x.com/TH_CrossBrave" target="_blank">Twitter / X</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-
     <main>
+      <section id="top">
+        <div class="poster">
+          <img src="images/a1poster.png" alt="poster">
+        </div>
+      </section>
 
+      <section id="teaser">
+        <img class="sec-img" src="images/Teaser.png" alt="Teaser/予告映像">
+        <iframe src="https://www.youtube.com/embed/B1qBgutw2jI" title="専門学校HAL 2024年度WEB MOVIE 「本気」篇" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </section>
+      
+      <section id="introduction">
+        <img class="sec-img" src="images/Introduction.png" alt="Introduction/イントロダクション">
+        <div class="summary">
+          <img class="story" src="images/Story.png" alt="ストーリー">
+        </div>
+        
+      </section>
+
+      <section id="character">
+        <img class="sec-img" src="images/Character.png" alt="Character/登場キャラクター">
+        <div class="chara-container">
+          <div class="ex-container">
+            <div class="ex-chara">
+              <img class="ex-img" src="images/ex_akane.png" alt="アカネ説明">
+            </div>
+            <div class="thumbnail">
+              <button class="btn-akane" onclick="PicAkane()" type="button"><img src="images/icon/akane.png" alt="akane"></button>
+              <button class="btn-rei" onclick="PicRei()" type="button"><img src="images/icon/rei.png" alt="rei"></button>
+            </div>
+          </div>
+          <div class="show-container">
+            <div class="pic-chara">
+              <img id="show-img" src="images/chara/akane.png" alt="chara">
+            </div>
+          </div>
+          <div class="hide">
+            <div class="thumbnail">
+              <button class="btn-akane" onclick="PicAkane()" type="button"><img src="images/icon/akane.png" alt="akane"></button>
+              <button class="btn-rei" onclick="PicRei()" type="button"><img src="images/icon/rei.png" alt="rei"></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
 
     <footer>
-      <small><p>HEW2025 クロスブレイブ制作委員会</p></small>
+      <div class="credit">
+        <small><p>HEW2025 クロスブレイブ制作委員会</p></small>
+      </div>
     </footer>
   </body>
 </html>
