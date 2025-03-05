@@ -37,3 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.style.left = isOpen ? "-300px" : "0px";
   });
 });
+
+function MenuClose(){
+  const menu = document.querySelector(".menu");
+
+  if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+    const isOpen = menu.style.left === "0px";
+    menu.style.left = isOpen ? "-300px" : "0px";
+  }
+}
