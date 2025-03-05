@@ -38,16 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var windowWidth = $(window).width();
-var windowSm = 768;
-
 function MenuClose(){
   const menu = document.querySelector(".menu");
-  
-  if (windowWidth <= windowSm) {
+  if (window.matchMedia('(max-width: 767px)').matches) {
     const isOpen = menu.style.left === "0px";
     menu.style.left = isOpen ? "-300px" : "0px";
-  } else {
-    
+  } else if (window.matchMedia('(min-width:768px)').matches) {
+    //PC処理
   }
 }
